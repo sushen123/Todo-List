@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+   
+    <form id="my-form">
+    <dialog class="dial">
+     
+        <label for="title">Title: </label>
+        <br>
+        <input type="text" id="title" name="title" required>
+        <br>
+
+        <label for="date">Date: </label>
+        <br>
+        <input type="date" id="date" name="date" required>
+        <br>
+
+       
+
+        <label for="priority">Priority: </label>
+        <br>
+        <select name="priority" id="priority">
+            <option value="high">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <br>
+
+        <label for="project">Project:</label>
+        <select name="project" id="dialog-project">
+           
+        </select>
+        <br>
+
+        <label for="description">Description </label>
+        <br>
+        <textarea id="description" name="description" rows="4" cols="30" required></textarea>
+
+        <br>
+
+        
+        
+        <input type="submit" id="submit-btn">
+        <button id="close">Close</button>
+      
+        
+    </dialog>
+    </form>
+    <header>
+        <nav>
+             <div class="header">
+                <div class="menu">
+                    <button class="menu-button"><img id="menu-image" alt=""></button>
+                   </div>
+                <h1>ToDo List</h1>
+                <div class="add">
+                    <button id="add-btn">
+                   <div id="add">
+                    <img id="add-image" alt="">
+                   </div>
+                   <h4>Add To Do</h4>
+                    </button>
+                </div>
+             </div>
+        </nav>
+    </header>
+    <div class="content">
+
+   <div class="sidebar">
+
+   <div class="menus">
+
+    <button id="home" value="menu-button">
+        <div class="home menu-list">
+            <img id="home-image" alt="">
+            <h3>Home</h3>
+   </div>
+    </button>
+    <hr>
+    <button id="today" value="menu-button">
+        <div class="today menu-list"><img id="today-image" alt="">
+        <h3>Today List</h3>
+        </div>
+    </button>
+    <hr>
+  
+    <button id="tomorrow" value="menu-button">
+        <div class="tomorrow menu-list">
+            <img id="tomorrow-image" alt="">
+            <h3>Tommorrow List</h3>
+        </div>
+    </button>
+    <hr>
+    <button id="completed" value="menu-button">
+        <div class="completed menu-list">
+            <img id="completed-image" alt="">
+            <h3>Completed Task</h3>
+        </div>
+        </button>
+
+       
+   </div>
+   <div class="project">
+    <form id="project-form">
+    <label for="projectname">Project Name:</label>
+    <input type="text" name="projectname" id="projectname">
+    <input type="submit" value="Add Project" id="project-button">
+    <br>
+        <label for="projectItem">Choose Projects</label>
+        <br>
+        <select name="projectItem" id="projectItem">
+            <option>Default Project</option>
+ </select>
+ <input type="submit" value="Ok" class="ok">
+    </form>
+   </div>
+   </div>
+   <div class="todo-content">
+   
+   
+   </div>
+   </div>
+
+</body>
+</html>
